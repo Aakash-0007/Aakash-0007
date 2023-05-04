@@ -364,7 +364,7 @@ function onRadioButton(deviceId, playlistId) {
     JSON.stringify(body),
     handleApiResponse
   );
- 
+} 
 
 function addRadioButton(item, index) {
   let node = document.createElement("button");
