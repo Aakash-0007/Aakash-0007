@@ -1,5 +1,5 @@
 body{
-    background-color: #c0c781ff;
+    background-color: #000000;
 }
 
 #tokenSection{
@@ -12,7 +12,7 @@ body{
 
 .container{
     padding: 20px;    
-    background-color: #78bc61ff;
+    background-color:rgba(0, 0, 0, .5);
 }
 
 #albumImage{
