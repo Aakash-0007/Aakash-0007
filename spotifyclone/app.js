@@ -1,7 +1,7 @@
 var redirect_uri = "https://aakash-0007.github.io/projects/spotifyclone/"; 
 
-var client_id = "07c6bc885f6741e5845c586683190c65";
-var client_secret = "2e021ddb82954b3e9c9a732caa63188d"; 
+var client_id = "";
+var client_secret = ""; 
 
 var access_token = null;
 var refresh_token = null;
