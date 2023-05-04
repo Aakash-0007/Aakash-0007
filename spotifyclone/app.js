@@ -1,8 +1,7 @@
-var redirect_uri = "http://127.0.0.1:5500/index.html"; // change this your value
-//var redirect_uri = "http://127.0.0.1:5500/index.html";
+var redirect_uri = "https://aakash-0007.github.io/projects/spotifyclone/"; 
 
 var client_id = "07c6bc885f6741e5845c586683190c65";
-var client_secret = "7fff34ec9e114c76a45759e7eedb3811"; // In a real app you should not expose your client_secret to the user
+var client_secret = "2e021ddb82954b3e9c9a732caa63188d"; 
 
 var access_token = null;
 var refresh_token = null;
