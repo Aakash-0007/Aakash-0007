@@ -364,8 +364,7 @@ function onRadioButton(deviceId, playlistId) {
     JSON.stringify(body),
     handleApiResponse
   );
-  //callApi( "PUT", SHUFFLE + "?state=true&device_id=" + deviceId, null, handleApiResponse );
-}
+ 
 
 function addRadioButton(item, index) {
   let node = document.createElement("button");
