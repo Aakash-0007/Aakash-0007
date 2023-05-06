@@ -37,7 +37,7 @@
                     <label for="devices" class="form-label">Devices</label>
                     <select id="devices" class="form-control">
                     </select>
-                    <input class="btn btn-primary btn-sm mt-3" type="button" onclick="refreshDevices()" value="Refresh Devices">
+                    <input class="btn btn-dark btn-primary btn-sm mt-3" type="button" onclick="refreshDevices()" value="Refresh Devices">
                     <input type="button" class="btn btn-dark btn-sm  mt-3" onclick="transfer()" value="Transfer">
                 </div>
 
@@ -45,7 +45,7 @@
                     <label for="playlists" class="form-label">Playlists</label>
                     <select id="playlists" class="form-control">
                     </select>
-                    <input class="btn btn-primary btn-sm mt-3" type="button" onclick="refreshPlaylists()" value="Refresh Playlists">
+                    <input class="btn btn-dark btn-primary btn-sm mt-3" type="button" onclick="refreshPlaylists()" value="Refresh Playlists">
 
                 </div>
 
@@ -53,7 +53,7 @@
                     <label for="tracks" class="form-label">Tracks</label>
                     <select id="tracks" class="form-control">
                     </select>
-                    <input class="btn btn-primary btn-sm mt-3" type="button" onclick="fetchTracks()" value="Fetch Tracks">
+                    <input class="btn btn-dark btn-primary btn-sm mt-3" type="button" onclick="fetchTracks()" value="Fetch Tracks">
                 </div>
 
                 <div class="mb-3">
@@ -75,17 +75,23 @@
                 <div class="row  mt-3">
                     <div class="col">
                         <h1> Currently Playing</h1>
-                        <input type="button" class="btn btn-primary btn-sm mt-3" onclick="currentlyPlaying()" value="Refresh Currently Playing">
+                        <input type="button" class="btn btn-dark btn-primary btn-sm mt-3" onclick="currentlyPlaying()" value="Refresh Currently Playing">
                         <div>
                             <img id="albumImage" src="">
-                            <div id="trackTitle"></div>
-                            <div id="trackArtist"></div>
+                            <div id="trackTitle" style="color: #fff;"></div>
+                            <div id="trackArtist" style="color:#fff"></div>
+                            <div id="albumTitle" style="color: #fff;"></div>
                         </div>
 
                     </div>
                 </div>
 
-                
+             <!--<div class="row  mt-3">
+                    <div class="col">
+                        <div id="radioButtons"></div>
+                        <input type="button" class="btn btn-dark" onclick="saveNewRadioButton()" value="Add">
+                    </div>
+                </div>-->
             </div>
         </div>
     </div>
