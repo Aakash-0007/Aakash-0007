@@ -1,8 +1,7 @@
 var redirect_uri = "https://aakash-0007.github.io/projects/spotifyclone/"; 
 
 var client_id = "";
-var client_secret = ""; 
-
+var client_secret = "";
 var access_token = null;
 var refresh_token = null;
 var currentPlaylist = "";
@@ -40,7 +39,7 @@ function onPageLoad() {
       currentlyPlaying();
     }
   }
-  refreshRadioButtons();
+  //refreshRadioButtons();
 }
 
 function handleRedirect() {
@@ -306,6 +305,7 @@ function handleCurrentlyPlayingResponse() {
       document.getElementById("trackTitle").innerHTML = data.item.name;
       document.getElementById("trackArtist").innerHTML =
         data.item.artists[0].name;
+      document.getElementById("albumTitle").innerHTML = data.item.name;
     }
 
     if (data.device != null) {
@@ -330,48 +330,4 @@ function handleCurrentlyPlayingResponse() {
     console.log(this.responseText);
     alert(this.responseText);
   }
-}
-
-function saveNewRadioButton() {
-  let item = {};
-  item.deviceId = deviceId();
-  item.playlistId = document.getElementById("playlists").value;
-  radioButtons.push(item);
-  localStorage.setItem("radio_button", JSON.stringify(radioButtons));
-  refreshRadioButtons();
-}
-
-function refreshRadioButtons() {
-  let data = localStorage.getItem("radio_button");
-  if (data != null) {
-    radioButtons = JSON.parse(data);
-    if (Array.isArray(radioButtons)) {
-      removeAllItems("radioButtons");
-      radioButtons.forEach((item, index) => addRadioButton(item, index));
-    }
-  }
-}
-
-function onRadioButton(deviceId, playlistId) {
-  let body = {};
-  body.context_uri = "spotify:playlist:" + playlistId;
-  body.offset = {};
-  body.offset.position = 0;
-  body.offset.position_ms = 0;
-  callApi(
-    "PUT",
-    PLAY + "?device_id=" + deviceId,
-    JSON.stringify(body),
-    handleApiResponse
-  );
-} 
-
-function addRadioButton(item, index) {
-  let node = document.createElement("button");
-  node.className = "btn btn-primary m-2";
-  node.innerText = index;
-  node.onclick = function () {
-    onRadioButton(item.deviceId, item.playlistId);
-  };
-  document.getElementById("radioButtons").appendChild(node);
 }
