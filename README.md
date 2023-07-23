@@ -1,6 +1,6 @@
 #Cashies (E-commerce website)
 
-A Clothing brand website named Cashies which i designed using HTML , CSS and some Javascript.I had a lot of fun creating this! Still needs touching up but moving on to other projects for now.
+A Clothing brand website named Cashies which i designed for a start-up using HTML , CSS and some Javascript. I had a lot of fun working on this! Not final build* .
 
 #Recipe app
 
