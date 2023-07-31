@@ -1,3 +1,11 @@
+
+** For viewing live projects" https://github.com/Aakash-0007/Guitar-AMP.git
+Go to https://aakash-0007.github.io/projects/ *respective project name* 
+example  https://aakash-0007.github.io/projects/cashies/ for Cashies
+         https://aakash-0007.github.io/projects/cashies/recipeapp/ for Recipe app
+         https://aakash-0007.github.io/projects/spotifyclone/ for Spotify Clone
+
+
 #Cashies (E-commerce website)
 
 A Clothing brand website named Cashies which i designed for a start-up using HTML , CSS and some Javascript. I had a lot of fun working on this! Not final build* .
