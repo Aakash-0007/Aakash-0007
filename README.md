@@ -1,5 +1,5 @@
 
-** For viewing live projects" https://github.com/Aakash-0007/Guitar-AMP.git
+** For viewing live projects" 
 Go to https://aakash-0007.github.io/projects/ *respective project name* 
 example  https://aakash-0007.github.io/projects/cashies/ for Cashies
          https://aakash-0007.github.io/projects/cashies/recipeapp/ for Recipe app
